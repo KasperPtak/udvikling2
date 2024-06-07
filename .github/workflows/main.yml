@@ -18,5 +18,5 @@ jobs:
             - name: 'Install packages'
               run: npm install
             - uses: cypress-io/github-actions@v6
-                with: 
-                    start: npm run dev
+              with: 
+                start: npm run dev
