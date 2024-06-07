@@ -1,0 +1,13 @@
+name: 'Linting & Tests'
+
+on: 'push'
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 'Installs packages'
+        run: npm i
+      - name: 'Execute linting'
+        run: npm run lint
