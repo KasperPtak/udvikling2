@@ -8,6 +8,6 @@ jobs:
         steps:
             - uses: actions/checkout@v4
             - name: 'Installs packages'
-                run: npm install
+              run: npm install
             - name: 'Execute linting'
-                run: npm run lint
+              run: npm run lint
