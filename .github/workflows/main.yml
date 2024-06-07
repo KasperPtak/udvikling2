@@ -15,8 +15,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - name 'Install packages'
-                run: npm install
+            - name: 'Install packages'
+              run: npm install
             - uses: cypress-io/github-actions@v6
                 with: 
                     start: npm run dev
